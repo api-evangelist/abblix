@@ -1,0 +1,135 @@
+name: Abblix Packages
+generated: '2026-10-14'
+method: searched
+source: https://azuresearch-usnc.nuget.org/query?q=owner:abblix
+packages:
+- name: Abblix.Utils
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.Utils
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.DependencyInjection
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.DependencyInjection
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.OIDC.Server
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.OIDC.Server
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.JWT
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.JWT
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.OIDC.Server.MVC
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.OIDC.Server.MVC
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.Templates
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.Templates
+  language: C#
+  official: true
+  version: 2.0.1
+  published: '2026-02-19'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.SharedSignals
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.SharedSignals
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.SecurityEvents.RISC
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.SecurityEvents.RISC
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.SecurityEvents
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.SecurityEvents
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.JWT.Azure
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.JWT.Azure
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.SecurityEvents.CAEP
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.SecurityEvents.CAEP
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.SecurityEvents.MinimalAPI
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.SecurityEvents.MinimalAPI
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.SharedSignals.MinimalAPI
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.SharedSignals.MinimalAPI
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.OIDC.Server.MinimalAPI
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.OIDC.Server.MinimalAPI
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.JWT.Vault
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.JWT.Vault
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+- name: Abblix.SharedSignals.Redis
+  registry: nuget
+  url: https://www.nuget.org/packages/Abblix.SharedSignals.Redis
+  language: C#
+  official: true
+  version: 2.4.0
+  published: '2026-09-05'
+  ownership_audit: nuget owner abblix; authors Abblix LLP; projectUrl on www.abblix.com
+note: NuGet catalogEntry for Abblix.OIDC.Server 2.4.0 names projectUrl https://www.abblix.com/abblix-oidc-server and authors "Abblix LLP"; harvest-packages.py --audit reads the paged semver1 index, which
+  carries no catalogEntry inline, and downgraded these as a false negative (2026-10-14).

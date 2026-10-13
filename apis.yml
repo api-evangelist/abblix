@@ -1,23 +1,99 @@
 aid: abblix
 name: Abblix
-description: 'Abblix is a company surfaced via the API Evangelist harvest backlog (source: market-gap:identity-auth)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Abblix builds identity infrastructure for .NET: Abblix OIDC Server, an OpenID Foundation certified OpenID Connect / OAuth 2.0 server library distributed on NuGet and deployed inside the customer''s
+  own perimeter, and Abblix Account, a free hosted authentication service (passkeys, MFA) whose OpenID Provider publishes discovery metadata at account.abblix.com. Licensing is tiered Community (free),
+  Pro and Enterprise, priced by company size.'
 url: https://raw.githubusercontent.com/api-evangelist/abblix/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:market-gap:identity-auth
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (local-v5; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-13'
-modified: '2026-10-13'
+modified: '2026-10-14'
 tags:
 - Company
-apis: []
+- Identity
+- OpenID Connect
+- OAuth 2.0
+- Authentication
+- .NET
+- Shared Signals
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+image: https://www.abblix.com/og/default.png
 common:
+- type: Spectral
+  url: rules/abblix-rules.yml
+- type: JSONLD
+  url: json-ld/abblix-context.jsonld
+- type: Vocabulary
+  url: vocabulary/abblix-vocabulary.yml
+- type: DataModel
+  url: data-model/abblix-data-model.yml
+- type: Security
+  url: security/abblix-vulnerability-disclosure.yml
+- type: Conformance
+  url: conformance/abblix-conformance.yml
+- type: LLMsTxt
+  url: llms/abblix-llms.txt
+- type: SecurityTxt
+  url: well-known/abblix-security.txt
+- type: WellKnown
+  url: well-known/abblix-well-known.yml
+- type: Hosts
+  url: hosts/abblix-hosts.yml
+- type: Vendors
+  url: vendors/abblix-vendors.yml
+- type: VulnerabilityDisclosure
+  url: security/abblix-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/abblix-domain-security.yml
 - type: Website
   url: https://www.abblix.com
+- type: Documentation
+  url: https://www.abblix.com/en/docs/introduction-to-abblix-oidc-server
+- type: GettingStarted
+  url: https://www.abblix.com/en/docs/getting-started-guide
+- type: ChangeLog
+  url: https://www.abblix.com/en/docs/releases
+- type: GitHubOrganization
+  url: https://github.com/Abblix
+- type: Pricing
+  url: https://www.abblix.com/en/oidc-server/pricing
+- type: PrivacyPolicy
+  url: https://www.abblix.com/en/privacy
+- type: TermsOfService
+  url: https://www.abblix.com/en/terms
+apis:
+- aid: abblix:abblix-account-oidc
+  name: Abblix Account OpenID Connect API
+  description: OpenID Connect / OAuth 2.0 endpoints of the hosted Abblix Account provider (issuer https://account.abblix.com), discoverable via its openid-configuration document. Contract generated from
+    the documentation by API Evangelist (2026-10-14); not the provider's own document. 2 operations.
+  humanURL: https://www.abblix.com/en/docs/discovery-and-well-known-endpoints
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/abblix-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/abblix-post-connect-token-request-schema.json
+  baseURL: https://account.abblix.com
+  image: https://www.abblix.com/og/default.png
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-14'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.abblix.com
+    status: 200
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 12
+  pass: local-v5

@@ -1,0 +1,6 @@
+# Vulnerability disclosure for Abblix (RFC 9116).
+Contact: mailto:info@abblix.com
+Contact: https://www.abblix.com/en/contact
+Preferred-Languages: en, ru
+Canonical: https://www.abblix.com/.well-known/security.txt
+Expires: 2027-08-01T00:00:00.000Z

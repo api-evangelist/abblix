@@ -1,0 +1,116 @@
+openapi: 3.1.0
+info:
+  title: Abblix API
+  version: '2026-10-14'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-14: 4 operation(s) read from 3 public documentation page(s) (each operation names its page in x-source). This is not the provider''s
+    published contract; Abblix has published no machine-readable contract that the pipeline could find. Engine: anthropic.'
+  x-evidence-tiers:
+    code-example: 2
+    documentation: 2
+    pages-with-code: 2
+    pages-read: 3
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-14'
+  x-generator: generate-contract-from-docs.py
+  x-engine: anthropic
+  x-sources:
+  - https://www.abblix.com/en/docs/shared-signals-guide
+  - https://www.abblix.com/en/docs/shared-signals-guide.md
+  - https://www.abblix.com/en/docs/pkce-in-openid-connect
+  x-pruned: '2026-10-14: removed /revoked-sessions and /sessions/alice-laptop-session/revoke - localhost sample-app routes from the shared-signals guide, not an Abblix-hosted API.'
+paths:
+  /connect/authorize:
+    get:
+      operationId: get_connect_authorize
+      tags:
+      - Connect
+      summary: Authorization endpoint that processes OpenID Connect authorization requests with PKCE parameters.
+      x-source: https://www.abblix.com/en/docs/pkce-in-openid-connect
+      parameters:
+      - name: response_type
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: client_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: redirect_uri
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: scope
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: state
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: code_challenge
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: code_challenge_method
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /connect/token:
+    post:
+      operationId: post_connect_token
+      tags:
+      - Connect
+      summary: Token endpoint that exchanges an authorization code for tokens, verifying the PKCE code_verifier.
+      x-source: https://www.abblix.com/en/docs/pkce-in-openid-connect
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostConnectTokenRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostConnectTokenRequest:
+      type: object
+      properties:
+        grant_type:
+          type: string
+        code:
+          type: string
+        redirect_uri:
+          type: string
+        client_id:
+          type: string
+        code_verifier:
+          type: string
+      required:
+      - grant_type
+      - code
+      - redirect_uri
+      - client_id
+tags:
+- name: Connect
+- name: Revoked Sessions
+- name: Sessions
+servers:
+- url: https://account.abblix.com
+  description: Abblix Account (hosted). Endpoints confirmed by https://account.abblix.com/.well-known/openid-configuration (HTTP 200, 2026-10-14).

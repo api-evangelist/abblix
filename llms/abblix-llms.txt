@@ -1,0 +1,106 @@
+# Abblix
+
+> Abblix builds identity infrastructure for .NET: Abblix OIDC Server, an OpenID Foundation
+> certified OpenID Connect / OAuth 2.0 server library you deploy inside your own perimeter,
+> and Abblix Account, a free cloud authentication service. Both are used in production by
+> Abblix itself. The company is an Astana Hub resident.
+
+## Products
+
+- [Abblix OIDC Server](https://www.abblix.com/en/oidc-server): certified OpenID Connect and OAuth 2.0 server
+  library for ASP.NET Core, distributed as a NuGet package with source on GitHub.
+- [Abblix Account](https://www.abblix.com/en/account): free cloud authentication service - passkeys, MFA,
+  external identity providers, session management.
+
+## Licensing and price
+
+- [Pricing](https://www.abblix.com/en/oidc-server/pricing): three tiers - Community (free), Pro, Enterprise.
+  Priced by company size, never per user or per client application.
+- [License terms in plain language](https://www.abblix.com/en/oidc-server/license): who may use it free of
+  charge, when a paid license is required, what is not allowed.
+- [Verify a license file](https://www.abblix.com/en/oidc-server/verify): checks expiry and details of an
+  issued license, in the browser.
+
+## Technical
+
+- [Implemented standards](https://www.abblix.com/en/oidc-server/standards): every RFC and OpenID specification
+  the server implements, with links to the source documents.
+- [Documentation](https://www.abblix.com/en/docs/introduction-to-abblix-oidc-server): installation,
+  configuration, guides and architecture - full articles listed below.
+- [Source code](https://github.com/Abblix/Oidc.Server#readme): GitHub repository and README.
+
+## Documentation
+
+Every article is also served as raw markdown at its URL + ".md". The generated API
+reference is listed by namespace index only - each index links every type it holds:
+
+- [A Durable Client Store in About a Hundred Lines](https://www.abblix.com/en/docs/durable-client-store.md): How to back Abblix OIDC Server's client registry with your own persistent database: the two seams to implement, the registration pattern that keeps config-file clients working, and a complete worked example on PostgreSQL.
+- [A Source Generator Replaced Over a Thousand Lines of Hand-Written Code](https://www.abblix.com/en/docs/source-generated-binding-models.md): How migrating Abblix OIDC Server's MVC binding models to a Roslyn source generator removed a duplicated model layer, the hand-written mapping between the two, and the ongoing effort of keeping them consistent.
+- [Abblix OIDC Server Configuration Guide](https://www.abblix.com/en/docs/configuration-and-setup.md): Complete configuration guide for Abblix OIDC Server - install NuGet packages, apply license, and set up your .NET authentication project step-by-step.
+- [Abblix OIDC Server Product Roadmap](https://www.abblix.com/en/docs/product-roadmap.md): Future features and planned improvements for Abblix OIDC Server, including FAPI 2.0 Security Profile certification, automatic signing-key management, Entity Framework Core and ASP.NET Identity stores, end-to-end observability, server-side sessions and reference tokens, and OpenID Federation 1.0.
+- [Abblix OIDC Server Release Notes](https://www.abblix.com/en/docs/releases.md): Latest releases and updates for Abblix OIDC Server. View changelog, new features, and bug fixes on GitHub.
+- [Abblix OIDC Server Technical Requirements](https://www.abblix.com/en/docs/technical-requirements.md): System requirements for Abblix OIDC Server: .NET 6 through 10 across product versions, supported web servers (Nginx, Apache, IIS), and hardware notes.
+- [Abblix OIDC Server Version Support Lifecycle](https://www.abblix.com/en/docs/version-support-lifecycle.md): Support lifecycle and end-of-life dates for Abblix OIDC Server versions. Version 1.* supported .NET 6-9 and reached end of support in July 2026, Version 2.* supports .NET 8-10 until November 2028, and the planned Version 3.* targets .NET 11-12 until November 2030.
+- [Abblix OIDC Server: An Alternative to IdentityServer4 and Duende IdentityServer](https://www.abblix.com/en/docs/duende-identityserver-alternative.md): Weighing a move off IdentityServer4 or Duende IdentityServer? Abblix OIDC Server is a certified, self-hosted .NET OpenID Connect library where every protocol feature ships in every tier, the free one included. Here is what the switch involves.
+- [Abblix.DependencyInjection API Reference](https://www.abblix.com/en/docs/api/abblix-dependencyinjection.md): Abblix.DependencyInjection API Reference - Abblix OIDC Server API Reference.
+- [Abblix.Jwt API Reference](https://www.abblix.com/en/docs/api/abblix-jwt.md): Abblix.Jwt API Reference - Abblix OIDC Server API Reference.
+- [Abblix.Jwt.Azure API Reference](https://www.abblix.com/en/docs/api/abblix-jwt-azure.md): Abblix.Jwt.Azure API Reference - Abblix OIDC Server API Reference.
+- [Abblix.Jwt.Vault API Reference](https://www.abblix.com/en/docs/api/abblix-jwt-vault.md): Abblix.Jwt.Vault API Reference - Abblix OIDC Server API Reference.
+- [Abblix.Oidc.Server API Reference](https://www.abblix.com/en/docs/api/abblix-oidc-server.md): Abblix.Oidc.Server API Reference - Abblix OIDC Server API Reference.
+- [Abblix.Oidc.Server.AspNetCore API Reference](https://www.abblix.com/en/docs/api/abblix-oidc-server-aspnetcore.md): Abblix.Oidc.Server.AspNetCore API Reference - Abblix OIDC Server API Reference.
+- [Abblix.Oidc.Server.MinimalApi API Reference](https://www.abblix.com/en/docs/api/abblix-oidc-server-minimalapi.md): Abblix.Oidc.Server.MinimalApi API Reference - Abblix OIDC Server API Reference.
+- [Abblix.Oidc.Server.Mvc API Reference](https://www.abblix.com/en/docs/api/abblix-oidc-server-mvc.md): Abblix.Oidc.Server.Mvc API Reference - Abblix OIDC Server API Reference.
+- [Abblix.SecurityEvents API Reference](https://www.abblix.com/en/docs/api/abblix-securityevents.md): Abblix.SecurityEvents API Reference - Abblix OIDC Server API Reference.
+- [Abblix.SecurityEvents.CAEP API Reference](https://www.abblix.com/en/docs/api/abblix-securityevents-caep.md): Abblix.SecurityEvents.CAEP API Reference - Abblix OIDC Server API Reference.
+- [Abblix.SecurityEvents.MinimalApi API Reference](https://www.abblix.com/en/docs/api/abblix-securityevents-minimalapi.md): Abblix.SecurityEvents.MinimalApi API Reference - Abblix OIDC Server API Reference.
+- [Abblix.SecurityEvents.RISC API Reference](https://www.abblix.com/en/docs/api/abblix-securityevents-risc.md): Abblix.SecurityEvents.RISC API Reference - Abblix OIDC Server API Reference.
+- [Abblix.SharedSignals API Reference](https://www.abblix.com/en/docs/api/abblix-sharedsignals.md): Abblix.SharedSignals API Reference - Abblix OIDC Server API Reference.
+- [Abblix.SharedSignals.MinimalApi API Reference](https://www.abblix.com/en/docs/api/abblix-sharedsignals-minimalapi.md): Abblix.SharedSignals.MinimalApi API Reference - Abblix OIDC Server API Reference.
+- [Abblix.SharedSignals.Redis API Reference](https://www.abblix.com/en/docs/api/abblix-sharedsignals-redis.md): Abblix.SharedSignals.Redis API Reference - Abblix OIDC Server API Reference.
+- [Abblix.Utils API Reference](https://www.abblix.com/en/docs/api/abblix-utils.md): Abblix.Utils API Reference - Abblix OIDC Server API Reference.
+- [Advanced DI in .NET: Dependency Overrides, Decorators, Composites and Editable Pipelines](https://www.abblix.com/en/docs/advanced-dependency-injection.md): Advanced dependency injection in .NET: aliases, Dependency.Override, decorators, composites, and a live cursor that edits a composed pipeline after the fact, all at registration time, with no third-party container.
+- [Can a Strong Identity Provider Replace Your BFF? What the Standards Say](https://www.abblix.com/en/docs/can-a-strong-provider-replace-your-bff.md): Sender-constrained tokens, device-bound cookies, short lifetimes and pushed revocation close the theft a Backend-for-Frontend was built to prevent. One attack scenario survives all of them, the specification rejects the provider-side answers to it by name, and what stops it is a confidential client on your side. From the team behind an OpenID Connect server library.
+- [Choosing a Backend for Operational State](https://www.abblix.com/en/docs/choosing-a-cache-backend.md): Abblix OIDC Server keeps all short-lived protocol state in whatever IDistributedCache you register: this guide maps what lives there, which flows break without a shared cache, why token status marks make persistence a security requirement, and how latency shapes the choice.
+- [Does Your BFF Need a Server-Side Session? Ask What Shape the State Should Be](https://www.abblix.com/en/docs/does-your-bff-need-a-server-side-session.md): A BFF decides who the OAuth client is, and four questions settle whether you are running one; where its state lives is a choice inside that decision. Which reasons for it your provider covers, which it does not, why the state you keep should be a revocation marker rather than a mirror, and why no provider feature replaces the backend itself. From the team behind an OpenID Connect server library.
+- [Dynamic Routing in ASP.NET Core with Abblix OIDC](https://www.abblix.com/en/docs/tokenized-routing-dotnet.md): Learn tokenized routing and runtime route resolution for cloud-native apps. Configure environment-specific routes for Docker, Kubernetes, and CI/CD pipelines.
+- [Evolution of OIDC Flows: From Implicit to PKCE and BFF](https://www.abblix.com/en/docs/openid-connect-flows-explained-simply-from-implicit-flows-to-authorization-code-flows-with-pkce-and-bff.md): Detailed analysis of OpenID Connect authentication flows - Implicit Flow, Authorization Code with PKCE, and BFF pattern. Learn vulnerabilities and security best practices.
+- [Extension Points Map: Which Interface Owns Which Behavior](https://www.abblix.com/en/docs/extension-points-map.md): A map of Abblix OIDC Server's public extension points: which interface to replace or decorate for each customization goal (clients, tokens, keys, sessions, storage, flows) with shipped defaults and the registration rules that make an override stick.
+- [Getting Started with Abblix OIDC Server](https://www.abblix.com/en/docs/getting-started-guide.md): Step-by-step guide to building an OpenID Connect Provider with ASP.NET MVC and Abblix OIDC Server. Learn setup, configuration, and testing.
+- [Hexagonal Architecture of Abblix OIDC Server](https://www.abblix.com/en/docs/understanding-the-architecture.md): Learn about Abblix OIDC Server's hexagonal architecture - core components, ports, adapters, and integration capabilities for scalable authentication services.
+- [Integrating ASP.NET Core Identity with Abblix OIDC Server](https://www.abblix.com/en/docs/aspnet-identity-integration.md): How to put ASP.NET Core Identity behind Abblix OIDC Server: Identity owns users, passwords, and lockout; the library owns the protocol and the session. Two seams, and what the glue between them has to do.
+- [Introduction to Abblix OIDC Server](https://www.abblix.com/en/docs/introduction-to-abblix-oidc-server.md): Abblix OIDC Server: a certified .NET library implementing OpenID Connect with native ASP.NET Core integration, Hexagonal Architecture, and official OpenID Foundation certification.
+- [Migrating from IdentityServer4 or Duende to Abblix OIDC Server](https://www.abblix.com/en/docs/migrate-from-identityserver.md): A worked migration of dotnet/eShop off Duende IdentityServer: every step, the decision behind it, the alternatives rejected where a real choice existed, and where the two libraries draw the line between what they own and what your application owns.
+- [Modern Authentication: OpenID Connect, BFF Pattern, and SPAs](https://www.abblix.com/en/docs/net-authentication-openid-connect-bff-spa.md): Comprehensive guide to Backend-For-Frontend (BFF) pattern for securing Single Page Applications with .NET and React. Learn OAuth 2.0 best practices for modern web apps.
+- [OAuth 2.0 & OpenID Connect Standards Implementation](https://www.abblix.com/en/docs/implemented-standards.md): Complete list of OAuth 2.0, OpenID Connect, and JWT standards implemented in Abblix OIDC Server including PKCE, CIBA, JAR, PAR, and token management protocols.
+- [OAuth 2.0 and OpenID Connect Glossary](https://www.abblix.com/en/docs/glossary-overview.md): Comprehensive glossary of OAuth 2.0, OpenID Connect, and authentication terms - access tokens, PKCE, CIBA, BFF, identity providers, and more.
+- [One Validation Rule, Three OIDC Servers: The Cognitive Cost of Extensibility](https://www.abblix.com/en/docs/cognitive-cost-of-extensibility.md): One realistic authorization rule, rejecting a money-moving scope for a public client, built three ways in Duende IdentityServer, OpenIddict, and Abblix OIDC Server, to compare what each asks a developer to learn before the rule runs.
+- [OpenID Connect Discovery and the .well-known Endpoints](https://www.abblix.com/en/docs/discovery-and-well-known-endpoints.md): How a client finds a provider's metadata, why openid-configuration and oauth-authorization-server build their paths differently, and what breaks when the issuer has a path.
+- [OpenIddict vs Duende IdentityServer vs Abblix OIDC Server: .NET Comparison](https://www.abblix.com/en/docs/comparison-duende-openiddict.md): Source-verified comparison of the three .NET OpenID Connect server frameworks: protocol coverage, licensing model, storage, security posture, ecosystem, where each product leads, and what you trade by choosing Abblix.
+- [Persisting JWT Signing Keys in Production](https://www.abblix.com/en/docs/signing-key-persistence.md): Configure durable signing keys for Abblix OIDC Server. Avoid multi-pod divergence, restart invalidation, and secrets in git. Recipes in order of preference: an HSM or KMS, a static secret, Redis, a database. Plus a key rotation discipline.
+- [PKCE in OpenID Connect: How Proof Key for Code Exchange Works](https://www.abblix.com/en/docs/pkce-in-openid-connect.md): What PKCE is, how code_verifier and code_challenge stop authorization code interception, why S256 replaced plain, and which clients the security BCP now requires it from.
+- [Production Hardening Checklist for Abblix OIDC Server](https://www.abblix.com/en/docs/production-hardening-checklist.md): The settings that separate a working Abblix OIDC Server from a production-ready one: refresh-token rotation, client policy, cache encryption, signing-key hygiene, consent enforcement, HTTPS behind a proxy, CORS, and licensing, with what is on by default and what you must turn on.
+- [Retries Where You Want Them: HTTP Resilience for Abblix OIDC Server](https://www.abblix.com/en/docs/http-resilience.md): Add retries and a circuit breaker to every outbound call Abblix OIDC Server makes, with one line for all of them or a name for each, using the standard .NET resilience APIs and nothing of ours.
+- [Securing a React SPA with the BFF Pattern and Abblix OIDC Server](https://www.abblix.com/en/docs/react-spa-bff-guide.md): Advanced step-by-step guide: build a React single-page app and a protected API secured by a .NET Backend-for-Frontend and Abblix OIDC Server, with no tokens ever in the browser.
+- [Shared Signals Framework in .NET: SSF, CAEP, RISC, Back-Channel Logout](https://www.abblix.com/en/docs/shared-signals-framework.md): How Back-Channel Logout, Security Event Tokens and the Shared Signals Framework relate - and how to transmit CAEP and RISC security events, and receive logout notifications, in .NET.
+- [Shared Signals in ASP.NET Core: a working transmitter and receiver example](https://www.abblix.com/en/docs/shared-signals-guide.md): Build a working Shared Signals transmitter and receiver in ASP.NET Core: install the packages, publish a key set, declare a stream, dispatch a CAEP session-revoked event, and validate what arrives.
+- [Stop Writing Boilerplate Conversions: The Result Pattern in C#](https://www.abblix.com/en/docs/result-pattern-migration.md): How migrating Abblix OIDC Server to the Result pattern eliminated about 20 duplicate error types, collapsed pipeline handlers to 2 lines, and turned runtime type checks into compile-time guarantees.
+- [Strategic Guide to Identity Management Solutions](https://www.abblix.com/en/docs/navigating-identity-management.md): Explore the strategic shift from cloud identity providers to on-premise and in-house authentication solutions. Learn the benefits of custom identity management development.
+- [The azp (Authorized Party) Claim in OpenID Connect](https://www.abblix.com/en/docs/azp-authorized-party-claim.md): What azp means, how it differs from aud, why errata set 2 removed the rule most articles still quote, and what a client should actually validate.
+- [The BFF Pattern in OAuth 2.0 and OpenID Connect](https://www.abblix.com/en/docs/bff-pattern-in-oauth-and-openid-connect.md): What a Backend-For-Frontend is, how it differs from a token-mediating backend, which endpoints it exposes, and why refresh token rotation and DPoP do not replace it.
+- [Token Inventory and Incident Revocation](https://www.abblix.com/en/docs/token-inventory-and-revocation.md): Abblix OIDC Server issues stateless JWTs and keeps no list of them; this guide builds one: recording decorators on the token-issuance seams, a queryable inventory table, and bulk revocation that writes through the same registry every server-side validation consults.
+- [We Built Our Own OIDC Library. Why?](https://www.abblix.com/en/docs/we-built-our-own-identity-server.md): The story behind Abblix OIDC Server: why we decided to build a certified .NET OAuth 2.0/OIDC library from scratch.
+- [What Abblix Opened Under Apache-2.0, and What It Did Not](https://www.abblix.com/en/docs/apache-2-0-packages.md): The Security Event and JWT packages of Abblix OIDC Server are Apache-2.0 as of 2.4: what that gives an application that is not a customer, what is commercial, and exactly where the line falls.
+
+- [llms-full.txt](https://www.abblix.com/llms-full.txt): every article above in full, plus each
+  page of the API reference - one file, no crawling.
+
+## Company
+
+- [About Abblix](https://www.abblix.com/en/about): who we are, what we build, how we work.
+- [Contact](https://www.abblix.com/en/contact): questions about licensing, integration, security reviews.
+- [Privacy Policy](https://www.abblix.com/en/privacy) · [Terms of Service](https://www.abblix.com/en/terms)
+
+## Optional
+
+- [Certification registry](https://openid.net/certification/#OPENID-OP-P): third-party proof
+  of the certification claims made on this site.
