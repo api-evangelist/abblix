@@ -69,19 +69,18 @@ common:
 - type: TermsOfService
   url: https://www.abblix.com/en/terms
 apis:
-- aid: abblix:abblix-account-oidc
-  name: Abblix Account OpenID Connect API
-  description: OpenID Connect / OAuth 2.0 endpoints of the hosted Abblix Account provider (issuer https://account.abblix.com), discoverable via its openid-configuration document. Contract generated from
-    the documentation by API Evangelist (2026-10-14); not the provider's own document. 2 operations.
+- aid: abblix:abblix-connect-api
+  name: Abblix Connect API
+  description: The Connect API from Abblix — 2 operation(s) for connect.
   humanURL: https://www.abblix.com/en/docs/discovery-and-well-known-endpoints
+  baseURL: https://account.abblix.com
+  tags:
+  - Connect
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/abblix-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/abblix-connect-api-openapi.yml
   - type: JSONSchema
     url: json-schema/abblix-post-connect-token-request-schema.json
-  baseURL: https://account.abblix.com
-  image: https://www.abblix.com/og/default.png
 x-coverage:
   state: none
   reason: no-developer-program
