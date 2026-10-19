@@ -1,16 +1,179 @@
 generated: '2026-10-14'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/abblix/integrations
 - https://n8n.io/integrations/abblix/
 - https://composio.dev/toolkits/abblix
 - https://monid.ai/tools/abblix
 checked:
+- https://api.nuget.org/v3
 - https://composio.dev/toolkits/abblix
+- https://crates.io/api/v1
 - https://monid.ai/tools/abblix
 - https://n8n.io/integrations/abblix/
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - https://zapier.com/apps/abblix/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: NuGet Gallery
+  partner: nuget
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (.NET)
+  evidence: https://www.nuget.org/packages/Abblix.DependencyInjection
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: NuGet Gallery (public registry JSON)
+    spec_file: null
+    language: .NET
+    packages:
+    - name: Abblix.DependencyInjection
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.DependencyInjection
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.JWT
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.JWT
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.JWT.Azure
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.JWT.Azure
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.JWT.Vault
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.JWT.Vault
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.OIDC.Server
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.OIDC.Server
+      repo_leg: domain:abblix.com
+      publisher_leg: org:abblix
+      matched_by: domain
+    - name: Abblix.OIDC.Server.MVC
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.OIDC.Server.MVC
+      repo_leg: domain:abblix.com
+      publisher_leg: org:abblix
+      matched_by: domain
+    - name: Abblix.OIDC.Server.MinimalAPI
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.OIDC.Server.MinimalAPI
+      repo_leg: domain:abblix.com
+      publisher_leg: org:abblix
+      matched_by: domain
+    - name: Abblix.SecurityEvents
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.SecurityEvents
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.SecurityEvents.CAEP
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.SecurityEvents.CAEP
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.SecurityEvents.MinimalAPI
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.SecurityEvents.MinimalAPI
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.SecurityEvents.RISC
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.SecurityEvents.RISC
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.SharedSignals
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.SharedSignals
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.SharedSignals.MinimalAPI
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.SharedSignals.MinimalAPI
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.SharedSignals.Redis
+      version: 2.4.0
+      released: '2026-09-05'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.SharedSignals.Redis
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    - name: Abblix.Templates
+      version: 2.0.1
+      released: '2026-02-19'
+      released_field: published
+      lapsed: false
+      page: https://www.nuget.org/packages/Abblix.Templates
+      repo_leg: github-org:abblix
+      publisher_leg: org:abblix
+      matched_by: github-org
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 templates: []
