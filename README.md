@@ -64,5 +64,115 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Abblix is a company surfaced via the API Evangelist harvest backlog (source: market-gap:identity-auth) and added to the network as a stub for full-pipeline profiling.
-- https://www.abblix.com
+Abblix builds identity infrastructure for .NET: Abblix OIDC Server, an OpenID Foundation certified OpenID Connect / OAuth 2.0 server library distributed on NuGet and deployed inside the customer's own perimeter, and Abblix Account, a free hosted authentication service (passkeys, MFA) whose OpenID Provider publishes discovery metadata at account.abblix.com. Licensing is tiered Community (free), Pro and Enterprise, priced by company size.
+
+**Areas:** Company · Identity · OpenID Connect · Authentication · .NET · Shared Signals
+
+## Abblix on APIs.io
+
+Everything profiled for Abblix is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/abblix/](https://apis.io/providers/abblix/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Abblix Connect API](https://apis.io/apis/abblix/abblix-connect-api/) — The Connect API from Abblix — 2 operation(s) for connect.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [abblix-mcp.yml](https://apis.io/servers/abblix/abblix-mcp-yml/)
+
+#### JSON Schema (1)
+
+The data models the API reads and writes.
+
+- [PostConnectTokenRequest](https://apis.io/schemas/abblix/abblix-post-connect-token-request/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Abblix Context](https://apis.io/jsonld/abblix/abblix-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Abblix API Rules](https://apis.io/rules/abblix/abblix-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Abblix Domain Security](https://apis.io/security/abblix/abblix-domain-security/)
+- [Abblix Vulnerability Disclosure](https://apis.io/security/abblix/abblix-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.abblix.com)
+- [Documentation](https://www.abblix.com/en/docs/introduction-to-abblix-oidc-server)
+- [Getting started](https://www.abblix.com/en/docs/getting-started-guide)
+- [Pricing](https://www.abblix.com/en/oidc-server/pricing)
+- [Changelog](https://www.abblix.com/en/docs/releases)
+- [Terms of service](https://www.abblix.com/en/terms)
+- [Privacy policy](https://www.abblix.com/en/privacy)
+- [GitHub](https://github.com/Abblix)
+
+## API Evangelist rating
+
+**Kin Score 30.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 17.8 |
+| Contract governance | 22.0 |
+| Operational transparency | 31.6 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 31.6 |
+
+**Agent readiness 28.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/abblix/](https://apis.io/providers/abblix/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Abblix: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/abblix/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
